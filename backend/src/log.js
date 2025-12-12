@@ -1,0 +1,1 @@
+// log.js\nmodule.exports.log = (level, message, meta = {}) => {\n  console.log(JSON.stringify({ level, message, ...meta, ts: new Date().toISOString() }));\n};

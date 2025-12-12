@@ -1,0 +1,1 @@
+// config.js\nconst env = process.env.NODE_ENV || 'development';\nmodule.exports = {\n  env,\n  port: process.env.PORT || 4000,\n  db: {\n    connectionString: process.env.DATABASE_URL || 'postgres://user:pass@localhost:5432/api_collections_dev'\n  }\n};

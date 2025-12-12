@@ -1,0 +1,1 @@
+// App.jsx\nimport React, { useState } from 'react';\nimport LoginForm from './components/LoginForm';\nimport CollectionsPage from './components/CollectionsPage';\nexport default function App(){\n  const [token,setToken] = useState(null);\n  return token ? <CollectionsPage token={token} /> : <LoginForm onAuth={setToken} />;\n}

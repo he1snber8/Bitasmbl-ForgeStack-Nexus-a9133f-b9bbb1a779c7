@@ -1,0 +1,1 @@
+{\n  \"name\": \"api-collections-backend\",\n  \"version\": \"1.0.0\",\n  \"main\": \"src/server.js\",\n  \"scripts\": {\n    \"start\": \"NODE_ENV=production node src/server.js\",\n    \"dev\": \"NODE_ENV=development node src/server.js\"\n  },\n  \"dependencies\": {\n    \"express\": \"^4.19.0\"\n  }\n}

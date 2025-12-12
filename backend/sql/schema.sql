@@ -1,0 +1,1 @@
+-- schema.sql\nCREATE TABLE IF NOT EXISTS users (\n  id SERIAL PRIMARY KEY,\n  email TEXT UNIQUE NOT NULL,\n  password_hash TEXT NOT NULL\n);\nCREATE TABLE IF NOT EXISTS collections (\n  id SERIAL PRIMARY KEY,\n  user_id INT REFERENCES users(id),\n  name TEXT NOT NULL\n);

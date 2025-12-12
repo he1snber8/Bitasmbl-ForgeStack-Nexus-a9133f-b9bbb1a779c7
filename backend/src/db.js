@@ -1,0 +1,1 @@
+// db.js\nconst { Pool } = require('pg');\nconst { db } = require('./config');\nconst pool = new Pool({ connectionString: db.connectionString });\nmodule.exports = {\n  query: (text, params) => pool.query(text, params)\n};

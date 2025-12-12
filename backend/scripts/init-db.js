@@ -1,0 +1,1 @@
+// init-db.js\nconst fs = require('fs');\nconst path = require('path');\nconst db = require('../src/db');\n(async ()=>{\n  const sql = fs.readFileSync(path.join(__dirname,'../sql/schema.sql'),'utf8');\n  await db.query(sql);\n  console.log('DB initialized');\n  process.exit(0);\n})();

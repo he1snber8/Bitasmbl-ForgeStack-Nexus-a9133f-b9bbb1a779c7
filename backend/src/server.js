@@ -1,0 +1,1 @@
+// server.js\nconst express = require('express');\nconst { port, env } = require('./config');\nconst app = express();\napp.use(express.json());\napp.use((req,res,next)=>{\n  console.log(`[${env}] ${req.method} ${req.url}`);\n  next();\n});\napp.get('/health',(req,res)=>res.json({status:'ok'}));\napp.listen(port,()=>console.log(`API on ${port}`));
